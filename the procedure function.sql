@@ -1,0 +1,8 @@
+DELIMITER //
+
+CREATE PROCEDURE GetEvenIdProducts()
+BEGIN
+    SELECT * FROM products WHERE id % 2 = 0;
+END //
+
+DELIMITER ;
